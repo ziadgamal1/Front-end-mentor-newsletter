@@ -1,0 +1,171 @@
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto") url("assets/fonts/Roboto-Bold.ttf") format("woff"),
+    url("assets/fonts/Roboto-Regular.ttf") format("woff2");
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #37394d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* z-index: -1000; */
+}
+.header {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #232741;
+  letter-spacing: 1px;
+  transform: translateX(-2px);
+}
+.container--text {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: flex-start; */
+  /* align-items: flex-start; */
+  /* align-content: center; */
+  /* margin-top: 15%; */
+  /* max-width: 500px; */
+  font-family: Roboto;
+  font-size: 1rem;
+  flex-grow: 5;
+  font-weight: 500;
+}
+.container {
+  background-color: #ffffff;
+  border-radius: 3.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 59.375rem;
+  max-height: fit-content;
+  padding: 1.6rem;
+  padding-left: 4.2rem;
+  gap: 1rem;
+  /* align-content: center; */
+  /* margin: auto;
+  margin-top: 7rem; */
+  /* background: linear-gradient(to bottom, #e0f2f1, #fff); */
+  z-index: 2;
+  /* gap: 15px; */
+  box-shadow: 0px 0px 10px hsla(210, 14%, 83%, 0.11);
+  transition: all 0.3s;
+}
+.left {
+  width: 40%;
+}
+.image {
+  z-index: 1;
+  max-width: 100%;
+  width: 100%;
+  /* height: auto !important; */
+  /* align-items: center; */
+  /* margin-top: 15%; */
+  /* margin-left: 35px; */
+  /* transform: scale(1.05); */
+  flex-shrink: 2;
+}
+.mail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.mail label {
+  font-weight: 700;
+}
+.input {
+  padding: 1rem;
+  font-size: 1.5rem;
+  border-radius: 0.625rem;
+  border: 2px solid black;
+}
+.input:hover {
+  cursor: pointer;
+}
+.button {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: #e6e6e6;
+  background-color: #000;
+  margin-top: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  border: none;
+  margin-bottom: 1.2rem;
+  filter: contrast(100%);
+  font-size: 1rem;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: hsl(4, 100%, 67%);
+  color: #fff;
+  box-shadow: 0 0 5px #495057;
+  transition: all 0.2s;
+}
+
+.check {
+  margin-top: 5px;
+  display: inline;
+  transform: translateY(2px);
+  width: 1.32rem;
+  height: auto;
+}
+.list--text {
+  padding-left: 0.98rem;
+  /* display: inline-block; */
+}
+.list {
+  list-style-type: none;
+  margin-bottom: 3rem;
+  margin-top: 1.2rem;
+  /* transform: translateX(-8px); */
+}
+.message {
+  width: 30rem;
+  max-height: fit-content;
+  font-family: roboto;
+  margin: auto;
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+  /* transform: translate(25%); */
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 0 5px #495057;
+  z-index: 700;
+  transition: all 0.3s;
+}
+.check--msg {
+  transform: scale(2.2) translateX(0.5rem);
+  margin-bottom: 2rem;
+}
+.message h1 {
+  font-weight: bolder;
+  font-size: 3.5rem;
+  letter-spacing: 0.1px;
+}
+.none {
+  display: none;
+}
+.error {
+  display: flex;
+  justify-content: space-between;
+}
+.error-msg {
+  color: #dc7066;
+  font-weight: 500;
+}
+.button--2 {
+  align-self: center;
+  width: 26rem;
+}
